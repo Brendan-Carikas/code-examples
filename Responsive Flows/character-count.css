@@ -1,0 +1,180 @@
+/* CSS Media Queries */
+@media screen and (max-width: 600px) {
+    /* Define styles for small screens */
+    .material-card {
+      /* Styles for cards on small screens */
+      border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 24px;
+  align-items: stretch; /* Ensures all cards stretch vertically */
+
+  height: 200px; /* Adjust this value as per your desired height */
+
+
+    }
+  
+    .card-header {
+        margin-bottom: 0px;
+      }
+      
+      
+      
+      .card-body {
+        margin-top: 0px;
+      }
+      
+      
+
+
+
+    .material-card .title {
+   /* Styles for card titles on different screens */
+   font-family: 'Libre Franklin', sans-serif; /* Added font family */
+   font-size: 20px;
+   font-weight: 500 ;
+
+   line-height: 1.2em;
+   max-height: 3.6em; /* Two lines of text (2 * line-height) */
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* Limit to 2 lines of text */
+   -webkit-box-orient: vertical;
+   white-space: normal; /* Update white-space property to normal */
+    }
+  
+    .material-card .summary {
+      /* Styles for card summaries on small screens */
+      font-family: 'Libre Franklin', sans-serif; /* Added font family */
+      font-weight: 400;
+      font-size: 14px;
+        color: #666;
+        
+      line-height: 1.4em;
+      max-height: 5.6em; /* Four lines of text (4 * line-height) */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* Limit to 2 lines of text */
+      -webkit-box-orient: vertical;
+      white-space: normal; /* Update white-space property to normal */
+    
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Define styles for medium screens */
+    .material-card {
+             /* Styles for cards on small screens */
+      border: 1px solid #ccc;
+      border-radius: 12px;
+  padding: 24px;
+      /* Styles for cards on medium screens */
+
+      align-items: stretch; /* Ensures all cards stretch vertically */
+
+      height: 200; /* Adjust this value as per your desired height */
+
+      .card-header {
+        margin-bottom: 0px;
+      }
+      
+      
+      
+      .card-body {
+        margin-top: 0px;
+      }
+    }
+  
+    .material-card .title {
+    /* Styles for card titles on different screens */
+    font-family: 'Libre Franklin', sans-serif; /* Added font family */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    max-height: 3.6em; /* Two lines of text (2 * line-height) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limit to 2 lines of text */
+    -webkit-box-orient: vertical;
+    white-space: normal; /* Update white-space property to normal */
+    }
+  
+    .material-card .summary {
+      /* Styles for card summaries on medium screens */
+      font-family: 'Libre Franklin', sans-serif; /* Added font family */
+      font-size: 14px;
+      font-weight: 400;
+      color: #666;
+      line-height: 1.4em;
+      max-height: 5.6em; /* Four lines of text (4 * line-height) */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* Limit to 2 lines of text */
+      -webkit-box-orient: vertical;
+      white-space: normal; /* Update white-space property to normal */
+     
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    /* Define styles for large screens */
+    .material-card {
+      /* Styles for cards on large screens */
+           border: 1px solid #ccc;
+           border-radius: 12px;
+  padding: 24px;
+  align-items: stretch; /* Ensures all cards stretch vertically */
+
+  height: 200px; /* Adjust this value as per your desired height */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+           .card-header {
+            margin-bottom: 0px;
+          }
+          
+          
+          
+          .card-body {
+            margin-top: 0px;
+          }
+    }
+  
+    .material-card .title {
+       /* Styles for card titles on different screens */
+       font-family: 'Libre Franklin', sans-serif; /* Added font family */
+       font-size: 20px;
+       font-weight: 500;
+  line-height: 1.2em;
+  max-height: 3.6em; /* Two lines of text (2 * line-height) */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 2 lines of text */
+  -webkit-box-orient: vertical;
+  white-space: normal; /* Update white-space property to normal */
+    }
+  
+    .material-card .summary {
+      /* Styles for card summaries on large screens */
+      font-family: 'Libre Franklin', sans-serif; /* Added font family */
+      font-size: 14px;
+      color: #666;
+      font-weight: 400;
+      line-height: 1.4em;
+      max-height: 5.6em; /* Four lines of text (4 * line-height) */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* Limit to 2 lines of text */
+      -webkit-box-orient: vertical;
+      white-space: normal; /* Update white-space property to normal */
+    
+    }
+  }
+  
