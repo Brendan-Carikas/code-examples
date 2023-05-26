@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Release Changelog</title>
+  <!-- Add any necessary CSS stylesheets here -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Release Changelog</h1>
+
+  <div id="changelog-container"></div>
+
+  <!-- Add any necessary JavaScript files here -->
+  <script src="script.js"></script>
+  <script>
+    // Fetch release data using the GitHub API
+    fetch('https://api.github.com/repos/{Brendan-Carikas}/{Brendan-Carikas/code-examples}/releases', {
+      headers: {
+        'Authorization': 'Bearer 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',
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Handle the release data and populate the changelog container
+      const changelogContainer = document.getElementById('changelog-container');
+      data.forEach(release => {
+        const releaseElement = document.createElement('div');
+        releaseElement.innerHTML = `
+          <h2>${release.name}</h2>
+          <p>${release.body}</p>
+          <hr>
+        `;
+        changelogContainer.appendChild(releaseElement);
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching release data:', error);
+    });
+  </script>
+</body>
+</html>
